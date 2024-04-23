@@ -9934,3 +9934,17 @@ cc_prebuilt_binary {
 	system_ext_specific: true,
 }
 
+install_symlink {
+	name: "libSoftGatekeeper_gatekeeper.default_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/gatekeeper.default.so",
+	symlink_target: "/vendor/lib/hw/libSoftGatekeeper.so",
+}
+
+install_symlink {
+	name: "libSoftGatekeeper_gatekeeper.default_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/gatekeeper.default.so",
+	symlink_target: "/vendor/lib64/hw/libSoftGatekeeper.so",
+}
+

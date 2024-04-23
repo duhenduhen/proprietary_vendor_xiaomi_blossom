@@ -757,3 +757,7 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     vtservice
+
+PRODUCT_PACKAGES += \
+    libSoftGatekeeper_gatekeeper.default_symlink32 \
+    libSoftGatekeeper_gatekeeper.default_symlink64
