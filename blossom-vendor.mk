@@ -645,7 +645,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     hwcomposer.mt6765 \
     libkmsetkey \
     libwapi \
