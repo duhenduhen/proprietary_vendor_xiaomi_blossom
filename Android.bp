@@ -7207,23 +7207,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpkm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libpkm.so"],
-			shared_libs: ["libutils", "libcutils", "libc++", "libdecrypt", "libpcap", "liblog", "libhidlbase", "libhidltransport", "libhwbinder", "vendor.mediatek.hardware.mdmonitor@1.0", "vendor.mediatek.hardware.apmonitor@2.0", "libapmonitor_vendor", "libicd_decoder", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libpowerhal",
 	owner: "xiaomi",
 	strip: {

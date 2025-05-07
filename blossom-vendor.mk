@@ -573,7 +573,6 @@ PRODUCT_PACKAGES += \
     libmtkutils \
     libneuropilot_hal_utils \
     libopus \
-    libpkm \
     libpowerhal \
     libpowerhalwrap_vendor \
     libratconfig \
