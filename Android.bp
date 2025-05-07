@@ -4,6 +4,7 @@
 
 soong_namespace {
 	imports: [
+		"device/xiaomi/blossom",
 		"hardware/mediatek",
 		"hardware/mediatek/libmtkperf_client",
 	],
