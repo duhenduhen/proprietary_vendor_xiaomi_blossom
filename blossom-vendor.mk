@@ -592,8 +592,6 @@ PRODUCT_PACKAGES += \
     libthermalalgo \
     libthha \
     libtqvalidate \
-    libtranslator_mapi_v3.0 \
-    libtranslator_utils \
     libutinterface_custom_md \
     libutinterface_md \
     libvc1dec_sa.ca7 \

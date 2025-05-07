@@ -7529,40 +7529,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libtranslator_mapi_v3.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libtranslator_mapi_v3.0.so"],
-			shared_libs: ["libasn1c_core", "libasn1c_mapi", "libtranslator_utils", "libcutils", "libutils", "liblog", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libtranslator_utils",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libtranslator_utils.so"],
-			shared_libs: ["libasn1c_core", "libcutils", "liblog", "vendor.mediatek.hardware.mdmonitor@1.0", "libhidlbase", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libutinterface_custom_md",
 	owner: "xiaomi",
 	strip: {
