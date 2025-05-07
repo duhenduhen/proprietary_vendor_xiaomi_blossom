@@ -8361,23 +8361,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.dmc@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.dmc@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.lbs@1.0",
 	owner: "xiaomi",
 	strip: {
@@ -8621,48 +8604,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libvcodec_capenc.so"],
 			shared_libs: ["liblog", "libion", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.dmc@1.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/vendor.mediatek.hardware.dmc@1.1.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.1.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.dmc@1.2",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/vendor.mediatek.hardware.dmc@1.2.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "vendor.mediatek.hardware.dmc@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.2.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "vendor.mediatek.hardware.dmc@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -9061,23 +9002,6 @@ cc_prebuilt_binary {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/ccci_rpcd"],
 			shared_libs: ["libc", "liblog", "libcutils", "libhardware_legacy", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "dmc_core",
-	owner: "xiaomi",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/dmc_core"],
-			shared_libs: ["libtranslator_utils", "libicd_decoder", "vendor.mediatek.hardware.dmc@1.2", "vendor.mediatek.hardware.mdmonitor@1.0", "libutils", "libcutils", "libc++", "libhidlbase", "liblog", "vendor.mediatek.hardware.apmonitor@2.0", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
