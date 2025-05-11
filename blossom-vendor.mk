@@ -256,6 +256,7 @@ PRODUCT_PACKAGES += \
     libusc \
     libwvhidl \
     libwvdrmengine \
+    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
@@ -628,7 +629,6 @@ PRODUCT_PACKAGES += \
     ov_ov02b_india_v_tuning \
     ov_ov02b_v_IdxMgr \
     ov_ov02b_v_tuning \
-    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
