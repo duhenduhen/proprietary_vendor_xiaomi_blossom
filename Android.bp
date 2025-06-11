@@ -8593,7 +8593,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/system_ext/lib/libimsma.so"],
-			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsink", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsink-mtk", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -8687,14 +8687,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsink",
+	name: "libsink-mtk",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libsink.so"],
+			srcs: ["proprietary/system_ext/lib/libsink-mtk.so"],
 			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
