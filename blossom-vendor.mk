@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/blossom/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@2.0.so \
     vendor/xiaomi/blossom/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so \
+    vendor/xiaomi/blossom/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/xiaomi/blossom/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
     vendor/xiaomi/blossom/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
     vendor/xiaomi/blossom/proprietary/vendor/bin/ccci_fsd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_fsd \
@@ -717,6 +718,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.4.so \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.5.so \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so \
+    vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.mtkradioex@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkradioex@2.0.so \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.netdagent@1.0.so \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/xiaomi/blossom/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
