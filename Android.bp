@@ -578,14 +578,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libPVRMtkutils.so"],
-			shared_libs: ["libsrv_um", "libdl", "libc++", "libbase", "liblog", "libutils", "libcutils", "libhardware", "libhidlbase", "libhidlmemory", "libgralloctypes", "libvndksupport", "libutilscallstack", "libgralloc_metadata", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libPVRMtkutils.so"],
-			shared_libs: ["libsrv_um", "libdl", "libc++", "libbase", "liblog", "libutils", "libcutils", "libhardware", "libhidlbase", "libhidlmemory", "libgralloctypes", "libvndksupport", "libutilscallstack", "libgralloc_metadata", "libc", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1166,14 +1165,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libimageio.so"],
-			shared_libs: ["liblog", "libcutils", "libimageio_plat_drv", "libimageio_plat_pipe", "libmtkcam_ulog", "libaedv", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libimageio.so"],
-			shared_libs: ["liblog", "libcutils", "libimageio_plat_drv", "libimageio_plat_pipe", "libmtkcam_ulog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1187,14 +1185,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libimageio_plat_drv.so"],
-			shared_libs: ["libcamdrv_tuning_mgr", "liblog", "libcutils", "libc++", "libdpframework", "libutils", "libcamdrv_isp", "libcamdrv_imem", "libcamdrv_twin", "libhardware", "libmtkcam_ulog", "libaedv", "libmtkcam_stdutils", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libimageio_plat_drv.so"],
-			shared_libs: ["libcamdrv_tuning_mgr", "liblog", "libcutils", "libc++", "libdpframework", "libutils", "libcamdrv_isp", "libcamdrv_imem", "libcamdrv_twin", "libhardware", "libmtkcam_ulog", "libmtkcam_stdutils", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1208,14 +1205,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libimageio_plat_pipe.so"],
-			shared_libs: ["libutils", "liblog", "libcutils", "libhardware", "libmtkcam_ulog", "libaedv", "libimageio_plat_drv", "libcamdrv_isp", "libmtkcam_stdutils", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libimageio_plat_pipe.so"],
-			shared_libs: ["libutils", "liblog", "libcutils", "libhardware", "libmtkcam_ulog", "libimageio_plat_drv", "libcamdrv_isp", "libmtkcam_stdutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1565,14 +1561,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libsrv_um.so"],
-			shared_libs: ["libPVRMtkutils", "liblog", "libm", "libdl", "libged", "libsync", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsrv_um.so"],
-			shared_libs: ["libPVRMtkutils", "liblog", "libm", "libdl", "libged", "libsync", "libc", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -8549,14 +8544,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/system_ext/lib/libmtk_vt_wrapper.so"],
-			shared_libs: ["libandroid_runtime", "libbinder", "libutils", "libcutils", "libnativehelper", "libfmq", "libbinder_ndk", "vendor.mediatek.hardware.videotelephony@1.0_system_ext", "vendor.mediatek.hardware.videotelephony-V1-ndk", "libhidlbase", "libhidltransport", "libui", "libgui", "libmedia", "libvcodec_cap", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libmtk_vt_wrapper.so"],
-			shared_libs: ["libandroid_runtime", "libbinder", "libutils", "libcutils", "libnativehelper", "libfmq", "vendor.mediatek.hardware.videotelephony@1.0_system_ext", "libhidlbase", "libhidltransport", "libui", "libgui", "libmedia", "libvcodec_cap", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	system_ext_specific: true,
 }
