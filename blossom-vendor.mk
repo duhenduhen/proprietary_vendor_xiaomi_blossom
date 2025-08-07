@@ -641,7 +641,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    vendor.mediatek.hardware.mtkradioex@2.0 \
+    vendor.mediatek.hardware.mtkradioex@2.0_vendor \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
@@ -666,7 +666,7 @@ PRODUCT_PACKAGES += \
     libsource \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0.system_ext \
+    vendor.mediatek.hardware.videotelephony@1.0_system_ext \
     vendor.mediatek.hardware.videotelephony@1.0 \
     ImsService \
     mediatek-common \
