@@ -573,7 +573,6 @@ PRODUCT_PACKAGES += \
     libmtktinyxml \
     libmtkutils \
     libneuropilot_hal_utils \
-    libopus \
     libpowerhal \
     libpowerhalwrap_vendor \
     libratconfig \
@@ -602,10 +601,8 @@ PRODUCT_PACKAGES += \
     libverno \
     libvolte_core_shr \
     libvolte_xdmc_shr \
-    libvorbisidec \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
-    libvpx \
     libvt_custom \
     libwa_ancbase \
     libwa_depth \
