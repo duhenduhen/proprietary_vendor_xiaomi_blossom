@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/xiaomi/blossom/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/xiaomi/blossom/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
-    vendor/xiaomi/blossom/proprietary/vendor/etc/pm_test_item_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pm_test_item_config.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn82_rfreg.bin \
     vendor/xiaomi/blossom/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/blossom/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
@@ -211,7 +210,6 @@ PRODUCT_PACKAGES += \
     libaalservice \
     libaedv \
     libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
@@ -311,7 +309,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     hynix_hi1337_i_IdxMgr \
     hynix_hi1337_i_tuning \
@@ -385,7 +382,6 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
     libSwJpgCodec \
-    lib_iir \
     lib_lowlight \
     lib_speech_enh \
     libabfadp \
@@ -460,7 +456,6 @@ PRODUCT_PACKAGES += \
     libcurl-md \
     libcurl_xcap_md \
     libcvsd_mtk \
-    libdecrypt \
     libeffecthal.base \
     libfeature.face \
     libfeature.stereo.provider \
@@ -479,7 +474,6 @@ PRODUCT_PACKAGES += \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
     libhevce_sb.ca7.android \
-    libhwminijail \
     libhydra \
     libicd_decoder \
     libipsec_ims_shr \
@@ -573,7 +567,6 @@ PRODUCT_PACKAGES += \
     libmtktinyxml \
     libmtkutils \
     libneuropilot_hal_utils \
-    libpowerhal \
     libpowerhalwrap_vendor \
     libratconfig \
     librgbwlightsensor \
@@ -647,7 +640,6 @@ PRODUCT_PACKAGES += \
     libkmsetkey \
     libwapi \
     libwifi-hal-mtk \
-    libwifitest \
     libmtk_vt_wrapper \
     libvcodec_cap \
     libvcodec_capenc \
@@ -758,7 +750,6 @@ PRODUCT_PACKAGES += \
     netdagent \
     netdc \
     nvram_daemon \
-    sensors_test \
     teei_daemon \
     thermal \
     thermal_manager \

@@ -779,27 +779,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libbluetooth_hw_test",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbluetooth_hw_test.so"],
-			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_hw_test.so"],
-			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libbluetooth_mtk",
 	owner: "xiaomi",
 	strip: {
@@ -2750,24 +2729,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.mtkpower@1.1-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.1-impl.so"],
-			shared_libs: ["liblog", "libhardware", "libhidlbase", "libutils", "libcutils", "vendor.mediatek.hardware.mtkpower@1.0", "vendor.mediatek.hardware.mtkpower@1.1", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
 	owner: "xiaomi",
 	strip: {
@@ -4002,23 +3963,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libSwJpgCodec.so"],
 			shared_libs: ["liblog", "libutils", "libcutils", "libjpeg-alpha_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "lib_iir",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/lib_iir.so"],
-			shared_libs: ["libcutils", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -5285,23 +5229,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdecrypt",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdecrypt.so"],
-			shared_libs: ["libssl", "libcrypto", "liblog", "libsysutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libeffecthal.base",
 	owner: "xiaomi",
 	strip: {
@@ -5600,23 +5527,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libhevce_sb.ca7.android.so"],
 			shared_libs: ["libcutils", "liblog", "libvcodec_oal", "libvcodec_utility", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libhwminijail",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhwminijail.so"],
-			shared_libs: ["libbase", "libminijail", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -7206,23 +7116,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpowerhal",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libpowerhal.so"],
-			shared_libs: ["libcutils", "libui", "libutils", "liblog", "libexpat", "libtinyxml2", "libhidlbase", "libhardware", "vendor.mediatek.hardware.netdagent@1.0", "vendor.mediatek.hardware.bluetooth.audio@2.1", "vendor.mediatek.hardware.mtkpower@1.0", "vendor.mediatek.hardware.mtkpower@1.1", "libaedv", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libpowerhalwrap_vendor",
 	owner: "xiaomi",
 	strip: {
@@ -8460,23 +8353,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwifi-hal-mtk.so"],
 			shared_libs: ["libbase", "libcutils", "liblog", "libnl", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libwifitest",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwifitest.so"],
-			shared_libs: ["libcutils", "libnvram", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9832,23 +9708,6 @@ cc_prebuilt_binary {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/nvram_daemon"],
 			shared_libs: ["libcutils", "libnvram", "libcustom_nvram", "libfile_op", "libnvram_daemon_callback", "liblog", "libhwm", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "sensors_test",
-	owner: "xiaomi",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/sensors_test"],
-			shared_libs: ["libutils", "libhwm", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
