@@ -32,8 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/etc/camera/model/preview_model/score/cache_data:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/preview_model/score/cache_data \
     vendor/xiaomi/blossom/proprietary/vendor/etc/camera/model/preview_model/score/model_mdl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/preview_model/score/model_mdl_cache \
     vendor/xiaomi/blossom/proprietary/vendor/etc/camera/model/preview_model/score/segment_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/preview_model/score/segment_model \
-    vendor/xiaomi/blossom/proprietary/vendor/etc/camera/waDumpinputMainImg_3264x2448.nv21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/waDumpinputMainImg_3264x2448.nv21 \
-    vendor/xiaomi/blossom/proprietary/vendor/etc/camera/waDumpinputSubImg_1600x1200.nv21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/waDumpinputSubImg_1600x1200.nv21 \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -43,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/xiaomi/blossom/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/xiaomi/blossom/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -121,8 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/blossom/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
-    vendor/xiaomi/blossom/proprietary/vendor/firmware/Conf_MultipleTest_aa.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest_aa.ini \
-    vendor/xiaomi/blossom/proprietary/vendor/firmware/Conf_MultipleTest_ab.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest_ab.ini \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware.bin \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_mpfw.bin \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/WIFI_RAM_CODE_soc1_0_1_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc1_0_1_1.bin \
@@ -188,7 +183,6 @@ PRODUCT_PACKAGES += \
     kmsetkey.beanpod \
     libSoftGatekeeper \
     memtrack.mt6765 \
-    thermal_hal \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
@@ -565,7 +559,6 @@ PRODUCT_PACKAGES += \
     libmtksysutils \
     libmtktinyxml \
     libmtkutils \
-    libneuropilot_hal_utils \
     libpowerhalwrap_vendor \
     libratconfig \
     librgbwlightsensor \
