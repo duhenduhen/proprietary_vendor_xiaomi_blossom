@@ -746,12 +746,15 @@ PRODUCT_PACKAGES += \
     thermal_manager \
     thermalloadalgod \
     volte_imcb \
+    volte_imcb.angelicain \
     volte_imcb.mt6765 \
     volte_imsm_93 \
     volte_md_status \
     volte_stack \
+    volte_stack.angelicain \
     volte_stack.mt6765 \
     volte_ua \
+    volte_ua.angelicain \
     volte_ua.mt6765 \
     wfca \
     wmt_launcher \

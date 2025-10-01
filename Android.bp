@@ -9748,6 +9748,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "volte_imcb.angelicain",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/volte_imcb.angelicain"],
+			shared_libs: ["libvolte_core_shr", "libvolte_xdmc_shr", "libverno", "libcutils", "liblog", "libc", "libdl", "libm", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "volte_imcb.mt6765",
 	owner: "xiaomi",
 	target: {
@@ -9816,6 +9833,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "volte_stack.angelicain",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/volte_stack.angelicain"],
+			shared_libs: ["libvolte_core_shr", "libvolte_xdmc_shr", "libipsec_ims_shr", "libverno", "libcutils", "liblog", "libc", "libdl", "libm", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "volte_stack.mt6765",
 	owner: "xiaomi",
 	target: {
@@ -9838,6 +9872,23 @@ cc_prebuilt_binary {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/bin/volte_ua"],
+			shared_libs: ["libvolte_core_shr", "libvolte_xdmc_shr", "libverno", "libcutils", "liblog", "libc", "libdl", "libm", ],
+		},
+	},
+	compile_multilib: "32",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "volte_ua.angelicain",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/volte_ua.angelicain"],
 			shared_libs: ["libvolte_core_shr", "libvolte_xdmc_shr", "libverno", "libcutils", "liblog", "libc", "libdl", "libm", ],
 		},
 	},
