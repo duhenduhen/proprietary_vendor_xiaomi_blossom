@@ -31,22 +31,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libfmjni",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/libfmjni.so"],
-			shared_libs: ["libcutils", "libmedia", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libEGL_mtk",
 	owner: "xiaomi",
 	strip: {

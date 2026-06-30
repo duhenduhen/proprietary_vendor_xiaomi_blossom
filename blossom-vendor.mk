@@ -169,7 +169,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libmtkavenhancements \
-    libfmjni \
     libEGL_mtk \
     libGLES_meow \
     libGLESv1_CM_mtk \
