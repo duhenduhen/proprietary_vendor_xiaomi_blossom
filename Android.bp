@@ -4,9 +4,9 @@
 
 soong_namespace {
 	imports: [
-		"device/xiaomi/blossom",
-		"hardware/mediatek",
-		"hardware/mediatek/libmtkperf_client",
+			"device/xiaomi/blossom",
+			"hardware/mediatek",
+			"hardware/mediatek/libmtkperf_client",
 	],
 }
 
@@ -5849,23 +5849,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libhwm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhwm.so"],
-			shared_libs: ["libnvram", "liblog", "libfile_op", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libhwminijail",
 	owner: "xiaomi",
 	strip: {
@@ -8979,7 +8962,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.dmc@1.1",
+	name: "vendor.mediatek.hardware.dmc@1.1_system_ext",
+	stem: "vendor.mediatek.hardware.dmc@1.1",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -8991,7 +8975,7 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.1.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -9000,7 +8984,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.dmc@1.2",
+	name: "vendor.mediatek.hardware.dmc@1.2_system_ext",
+	stem: "vendor.mediatek.hardware.dmc@1.2",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -9008,11 +8993,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/system_ext/lib/vendor.mediatek.hardware.dmc@1.2.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "vendor.mediatek.hardware.dmc@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "vendor.mediatek.hardware.dmc@1.1_system_ext", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.2.so"],
-			shared_libs: ["vendor.mediatek.hardware.dmc@1.0", "vendor.mediatek.hardware.dmc@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.mediatek.hardware.dmc@1.1_system_ext", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -9021,7 +9006,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.mtkradioex@2.0",
+	name: "vendor.mediatek.hardware.mtkradioex@2.0_system_ext",
+	stem: "vendor.mediatek.hardware.mtkradioex@2.0",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -9042,7 +9028,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.videotelephony@1.0",
+	name: "vendor.mediatek.hardware.videotelephony@1.0_system_ext",
+	stem: "vendor.mediatek.hardware.videotelephony@1.0",
 	owner: "xiaomi",
 	strip: {
 		none: true,

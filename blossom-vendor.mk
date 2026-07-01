@@ -647,7 +647,6 @@ PRODUCT_PACKAGES += \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
     libhevce_sb.ca7.android \
-    libhwm \
     libhwminijail \
     libhydra \
     libicd_decoder \
@@ -831,10 +830,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.wifi.supplicant@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.1 \
     vendor.mediatek.hardware.wifi.supplicant@2.2 \
-    vendor.mediatek.hardware.dmc@1.1 \
-    vendor.mediatek.hardware.dmc@1.2 \
-    vendor.mediatek.hardware.mtkradioex@2.0 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.dmc@1.1_system_ext \
+    vendor.mediatek.hardware.dmc@1.2_system_ext \
+    vendor.mediatek.hardware.mtkradioex@2.0_system_ext \
+    vendor.mediatek.hardware.videotelephony@1.0_system_ext \
     ImsService \
     mediatek-common \
     mediatek-framework \
